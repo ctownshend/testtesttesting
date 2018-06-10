@@ -13,3 +13,12 @@ jobs:
       - run: npm install
       # run tests!
       - run: npm test
+
+- store_test_results:
+    path: jest-test-results
+
+- persist_to_workspace:
+    root: /tmp/workspace
+    paths:
+      - target/application.jar
+      - build/*
