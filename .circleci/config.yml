@@ -12,7 +12,11 @@ jobs:
       - checkout
       - run: npm install
       # run tests!
-      - run: npm test
-
+      - run: npm test --runInBand
+      - run:
+            name: Jest Suite
+                  command: yarn jest -- --ci --testResultsProcessor="jest-junit"
+                  environment:
+                    JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
       - store_test_results:
-          path: jest-test-results
+          path: path: reports/junit
