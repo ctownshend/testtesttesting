@@ -3,4 +3,4 @@ Test test testing
 
 initial commit
 
-https://circleci.com/gh/:owner/:repo.png?circle-token=:circle-token
+[![CircleCI](https://circleci.com/gh/ctownshend/testtesttesting.svg?style=shield)](https://circleci.com/gh/ctownshend/testtesttesting)
