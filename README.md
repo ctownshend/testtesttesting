@@ -1,7 +1,7 @@
 # testtesttesting
-Simple test from Coding train
+Simple CI test from Coding train
 
 ### Status
-[![CircleCI](https://circleci.com/gh/ctownshend/testtesttesting.svg?style=shield)](https://circleci.com/gh/ctownshend/testtesttesting)
-
-[![Build Status](https://travis-ci.org/ctownshend/testtesttesting.svg?branch=master)](https://travis-ci.org/ctownshend/testtesttesting)
+[![Build Status](https://img.shields.io/travis/ctownshend/testtesttesting/master.svg?logo=travis)](https://travis-ci.org/ctownshend/testtesttesting)
+[![Build Status](https://img.shields.io/circleci/project/github/ctownshend/testtesttesting/master.svg?logo=circleci)](https://circleci.com/gh/ctownshend/testtesttesting)
+[![Minimum npm Version](https://img.shields.io/badge/npm-%3E%3D%205.7.1-8892BF.svg)](https://npmjs.org/)
