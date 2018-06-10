@@ -12,7 +12,14 @@ jobs:
       - checkout
       - run: npm install
       # run tests!
-      - run: npm test
-
+      
+      - run:
+          name: "JavaScript Test Suite"
+          # yarn here makes sure we are using the local jest binary
+          command: yarn jest -- --ci --testResultsProcessor="jest-junit"
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
       - store_test_results:
-          path: jest-test-results
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit

@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/local/Cellar/node/8.2.1/bin/node /usr/local/Cellar/yarn/0.27.5_1/libexec/bin/yarn.js add --dev jest-junit
+
+PATH: 
+  /usr/local/mysql/bin:/Applications/NexusIQServer:/Applications/nexus-3.0/nexus-3.11.0-01/bin:/Users/camerontownshend/.rvm/gems/ruby-2.4.1/bin:/Users/camerontownshend/.rvm/gems/ruby-2.4.1@global/bin:/Users/camerontownshend/.rvm/rubies/ruby-2.4.1/bin:/Users/camerontownshend/Library/Python/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/camerontownshend/Library/Python/3.6/bin:/Users/camerontownshend/.local/bin:/applications/gradle-4.6/bin:/Applications/sonarqube/extensions/sonar-scanner/bin:/opt/local/bin:/opt/local/sbin:/Applications/maven/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/bin:/usr/local/bin:/Applications/sonarqube/extensions/sonar-scanner-2.6.1/bin:/Users/camerontownshend/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/:/Applications/Docker.app/Contents/Resources/bin:/usr/local/go/bin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/camerontownshend/.rvm/bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.2.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "testtesttesting",
+    "version": "1.0.0",
+    "description": "",
+    "main": "sum.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "jest": "^23.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: http://localhost:8083/repository/npm-all/jest-junit: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:114873:19)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:105:13)
+      at ClientRequest.emit (events.js:207:7)
+      at Socket.emitTimeout (_http_client.js:722:34)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:105:13)
+      at Socket.emit (events.js:207:7)
+      at Socket._onTimeout (net.js:402:8)
+      at ontimeout (timers.js:469:11)
